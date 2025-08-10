@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пирамидка - Детский развивающий центр</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <span>Пирамидка</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#teacher">Педагог</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Добро пожаловать в "Пирамидку"!</h1>
+            <p>Развиваем таланты, готовим к школе, помогаем говорить правильно</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('services')">Наши услуги</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">Записаться</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-elements">
+                <div class="element element-1">🎨</div>
+                <div class="element element-2">📚</div>
+                <div class="element element-3">🎵</div>
+                <div class="element element-4">🧩</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Подготовка к школе</h3>
+                    <p>Комплексная подготовка детей к школьному обучению: чтение, письмо, математика, развитие логики</p>
+                    <ul>
+                        <li>Обучение чтению и письму</li>
+                        <li>Математика и логика</li>
+                        <li>Развитие внимания и памяти</li>
+                        <li>Психологическая готовность</li>
+                    </ul>
+                    <button class="btn btn-outline">Подробнее</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Логопедия</h3>
+                    <p>Коррекция речевых нарушений и развитие правильной речи у детей</p>
+                    <ul>
+                        <li>Диагностика речевых нарушений</li>
+                        <li>Коррекция звукопроизношения</li>
+                        <li>Развитие связной речи</li>
+                        <li>Работа с заиканием</li>
+                    </ul>
+                    <button class="btn btn-outline">Подробнее</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Развивающие занятия</h3>
+                    <p>Комплексные развивающие программы для детей разных возрастов</p>
+                    <ul>
+                        <li>Мелкая моторика</li>
+                        <li>Творческие занятия</li>
+                        <li>Музыкальное развитие</li>
+                        <li>Физическое развитие</li>
+                    </ul>
+                    <button class="btn btn-outline">Подробнее</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Скорочтение</h3>
+                    <p>Развитие навыков быстрого и осознанного чтения у детей</p>
+                    <ul>
+                        <li>Увеличение скорости чтения</li>
+                        <li>Улучшение понимания текста</li>
+                        <li>Развитие памяти и внимания</li>
+                        <li>Техники эффективного чтения</li>
+                    </ul>
+                    <button class="btn btn-outline">Подробнее</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Групповые занятия</h3>
+                    <p>Занятия в небольших группах для развития социальных навыков</p>
+                    <ul>
+                        <li>Адаптация к коллективу</li>
+                        <li>Развитие коммуникации</li>
+                        <li>Совместные игры</li>
+                        <li>Подготовка к детскому саду</li>
+                    </ul>
+                    <button class="btn btn-outline">Подробнее</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Индивидуальные занятия</h3>
+                    <p>Персональный подход к каждому ребенку для максимальной эффективности</p>
+                    <ul>
+                        <li>Индивидуальная программа</li>
+                        <li>Гибкий график</li>
+                        <li>Фокус на проблемных зонах</li>
+                        <li>Быстрые результаты</li>
+                    </ul>
+                    <button class="btn btn-outline">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>О нашем центре</h2>
+                    <p>Детский развивающий центр "Пирамидка" - это место, где каждый ребенок может раскрыть свой потенциал и развить необходимые навыки для успешного будущего.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Индивидуальный подход к каждому ребенку</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>Опытный педагог с высшим образованием</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-home"></i>
+                            <span>Уютная и безопасная обстановка</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Гибкий график занятий</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-child"></i>
+                        <p>Фото нашего центра</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teacher Section -->
+    <section id="teacher" class="teachers">
+        <div class="container">
+            <h2>Наш педагог</h2>
+            <div class="teachers-grid">
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Лилия Станиславовна</h3>
+                    <p class="teacher-specialty">Логопед, психолог, педагог развивающих занятий</p>
+                    <p>Специалист по подготовке к школе, скорочтению и развивающим занятиям. Проводит как групповые, так и индивидуальные занятия для детей всех возрастов.</p>
+                    <div class="teacher-skills">
+                        <span class="skill">Логопедия</span>
+                        <span class="skill">Психология</span>
+                        <span class="skill">Подготовка к школе</span>
+                        <span class="skill">Скорочтение</span>
+                        <span class="skill">Развивающие занятия</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Галерея</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Занятия</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Творчество</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Игры</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Праздники</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Телефон</h3>
+                            <p>92-79-81</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>г. Оренбург<br>ул. Чкалова, д. 3/1</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Режим работы</h3>
+                            <p>Пн-Пт: 8:00 - 19:00</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <h3>Записаться на занятие</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Имя ребенка" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Имя родителя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Выберите услугу</option>
+                            <option value="school">Подготовка к школе</option>
+                            <option value="speech">Логопедия</option>
+                            <option value="development">Развивающие занятия</option>
+                            <option value="speedreading">Скорочтение</option>
+                            <option value="group">Групповые занятия</option>
+                            <option value="individual">Индивидуальные занятия</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Дополнительная информация"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>Пирамидка</span>
+                    </div>
+                    <p>Развивающий центр для детей</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#services">Подготовка к школе</a></li>
+                        <li><a href="#services">Логопедия</a></li>
+                        <li><a href="#services">Развивающие занятия</a></li>
+                        <li><a href="#services">Скорочтение</a></li>
+                        <li><a href="#services">Групповые занятия</a></li>
+                        <li><a href="#services">Индивидуальные занятия</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>92-79-81</p>
+                    <p>г. Оренбург, ул. Чкалова, д. 3/1</p>
+                    <p>Пн-Пт: 8:00 - 19:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Детский развивающий центр "Пирамидка". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
